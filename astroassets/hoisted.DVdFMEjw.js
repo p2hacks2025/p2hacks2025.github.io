@@ -1,0 +1,1 @@
+function t(){console.log("add event listener"),document.querySelectorAll(".sp-menu-button").forEach(e=>{e.addEventListener("click",()=>{document.querySelector(".sp-menu")?.classList.toggle("active")})})}t();document.addEventListener("astro:after-swap",console.log);
