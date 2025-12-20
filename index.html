@@ -1,5 +1,5 @@
 <!DOCTYPE html><html lang="ja"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>P2HACKS2025</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+JP:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:wght@400;700&display=swap" rel="stylesheet"><link rel="icon" href="/favicon.ico"><meta property="og:title" content="P2HACKS"><meta property="og:site_name" content="P2HACKS"><meta property="og:url" content="https://p2hacks2025.github.io/"><meta property="og:image" content="https://p2hacks2025.github.io/ogp2025.png"><meta property="og:type" content="website"><meta property="og:title" content="P2HACKS"><meta property="og:site_name" content="P2HACKS"><meta property="og:url" content="https://p2hacks2025.github.io/"><meta property="og:image" content="https://p2hacks2025.github.io/ogp2025.png"><meta property="og:type" content="website"><meta name="twitter:card" content="summary_large_image"><!-- <ViewTransitions /> --><link rel="stylesheet" href="/astroassets/index.sSJugwMv.css">
-<link rel="stylesheet" href="/astroassets/index.B_7oQ40J.css">
+<link rel="stylesheet" href="/astroassets/index.7akKJz6T.css">
 <style>.TrimLineFader[data-astro-cid-slod673q]{display:inline-block;position:relative}.TrimLineFader[data-astro-cid-slod673q].block{display:block}.inner[data-astro-cid-slod673q]{display:inline-block;visibility:hidden;transition:visibility step-end .25s;@media (prefers-reduced-motion: reduce){visibility:visible}}.TrimLineFader[data-astro-cid-slod673q].block .inner[data-astro-cid-slod673q]{display:block}.TrimLineFader[data-astro-cid-slod673q]:before{position:absolute;background-color:var(--color-text);inset:0;opacity:0;content:" "}.TrimLineFader[data-astro-cid-slod673q].is-visible .inner[data-astro-cid-slod673q]{visibility:visible}.TrimLineFader[data-astro-cid-slod673q].is-visible:before{animation:FadingCover ease-in-out .5s forwards;@media (prefers-reduced-motion: reduce){animation:none;opacity:0}}@keyframes FadingCover{0%{transform:scaleX(0);transform-origin:0 0;opacity:0}49%{transform:scaleX(1);transform-origin:0 0;opacity:1}50%{transform:scaleX(1);transform-origin:100% 100%;opacity:1}99%{transform:scaleX(0);transform-origin:100% 100%;opacity:0}to{transform:scaleX(0);transform-origin:100% 100%;opacity:0}}
 .ArticleDescription[data-astro-cid-cta3o4h5]{text-align:center;font-weight:600;@media screen and (min-width: 590px){line-height:160%;letter-spacing:.1em}}.ArticleSection[data-astro-cid-worou3s5]{font-weight:600}.main[data-astro-cid-sxfw5txc]{font-size:3em;text-align:center;color:var(--color-text);font-weight:700;font-family:Inter}.sub[data-astro-cid-sxfw5txc]{color:var(--color-text);text-align:center;font-size:1em;font-weight:400;line-height:160%;letter-spacing:.5em}.WrappedBox[data-astro-cid-642ucxle]{padding-top:24px}.box[data-astro-cid-642ucxle]{position:relative;border-radius:40px;border:3px solid var(--color-text);background:#fff;box-shadow:10px 10px 0 0 var(--color-text);padding:40px 25px 35px;color:var(--color-text-alt);text-align:center;font-style:normal;font-weight:600;line-height:160%;letter-spacing:.1em;@media screen and (min-width: 1025px){padding:65px 20px 60px}}.title[data-astro-cid-642ucxle]{box-sizing:border-box;position:absolute;top:0;left:50%;transform:translate(-50%,-50%);border-radius:30px;background:var(--color-text);padding:0 25px;height:2.5rem;line-height:2.5rem;vertical-align:middle;word-break:keep-all;color:#fff;text-align:center;font-size:1.3em;font-weight:900;@media screen and (min-width: 1025px){padding:0 40px;min-width:50%}}
 .SectionParagraph[data-astro-cid-y54r4ufh]{margin:30px 0 0;color:var(--color-text-alt);font-weight:600;line-height:160%;letter-spacing:.1em;padding:0;@media screen and (min-width: 590px){margin:60px 0 0}}.SectionTitle[data-astro-cid-azbpcp4f]{display:inline-block;color:var(--color-text);font-size:2em;font-style:normal;font-weight:900;line-height:1.3em;width:100%}.inner[data-astro-cid-azbpcp4f]{padding-left:.35em;border-left:var(--color-text) solid .35em}
@@ -76,6 +76,101 @@
     await wait(3000);
 
     loaderDiv.remove();
+  })();
+</script> <video class="codeFreezeAnimation" src="/Codefreeze.mp4" data-codefreeze-animation data-date="1766242799" preload="" data-astro-cid-3dq67ujk></video> <button data-codefreeze-animation-play style="position: fixed; right: 0; bottom: 0; display: none;" data-astro-cid-3dq67ujk>
+play
+</button>  <script>
+  (() => {
+    const containers = document.querySelectorAll(`[data-codefreeze-animation]`);
+    const container = containers[containers.length - 1];
+
+    const date = Number.parseInt(container.dataset["date"]);
+
+    const fireCodeFreezeAnimation = () => {
+      console.log("Code freezed!");
+
+      const video = container;
+
+      setTimeout(() => {
+        video.classList.add("codeFreezeAnimation__played");
+
+        setTimeout(() => {
+          video.classList.add("codeFreezeAnimation__finished");
+        }, 3 * 1000);
+      }, 29 * 1000);
+
+      let hasVideoPlay = false;
+
+      video.addEventListener("play", () => {
+        hasVideoPlay = true;
+      });
+
+      video.classList.add("codeFreezeAnimation__playing");
+
+      // first attempt; naive play
+      console.log("Play");
+      video.play();
+
+      setTimeout(() => {
+        console.log("Start vibration");
+        try {
+          window.navigator.vibrate([1560, 500, 1560]);
+        } catch (e) {
+          console.error("Failed to vibrate");
+        }
+      }, 23200);
+
+      setTimeout(() => {
+        if (!hasVideoPlay) {
+          // mute and retry
+          console.log("Mute and retry");
+          video.muted = true;
+          video.play();
+        }
+      }, 500);
+
+      setTimeout(() => {
+        if (!hasVideoPlay) {
+          // give up
+          console.log("Give up...");
+          video.classList.add("codeFreezeAnimation__played");
+          video.classList.add("codeFreezeAnimation__finished");
+          video.pause();
+        }
+      }, 1000);
+    };
+
+    let codeFreezeAnimationFired = false;
+
+    setInterval(() => {
+      const now = Date.now() / 1000;
+
+      const duration = date - now;
+
+      const shouldFire = -5 < duration && duration < 5;
+
+      console.log("T" + -duration);
+
+      // 5秒前
+      if (shouldFire) {
+        if (!codeFreezeAnimationFired) {
+          codeFreezeAnimationFired = true;
+
+          // Fire freeze animation
+          fireCodeFreezeAnimation();
+        }
+      }
+    }, 1000);
+
+    const playButton = document.querySelector(
+      "[data-codefreeze-animation-play]",
+    );
+
+    playButton.addEventListener("click", () => {
+      setTimeout(() => {
+        fireCodeFreezeAnimation();
+      }, 1000);
+    });
   })();
 </script> <div class="Hero" data-astro-cid-bbe6dxrz>  <video class="HeroBackground" autoplay playsinline loop muted preload="auto" poster="/hero-background-fallback.jpg" data-astro-cid-j7pv25f6> <!-- I'm very happy with the video quality of AV1. It weights only 473KB without any visual mess. That's fascinating! --> <source src="/hero-background-av1.webm" type="video/webm; codecs=&quot;av01.0.05M.08&quot;" data-astro-cid-j7pv25f6> <source src="/hero-background-vp9.webm" type="video/webm; codecs=&quot;vp09.00.31.08&quot;" data-astro-cid-j7pv25f6> <source src="/hero-background-h264.webm" type="video/mp4" data-astro-cid-j7pv25f6> </video> <div class="HeroBox" data-astro-cid-j7pv25f6> <h1 data-astro-cid-j7pv25f6> <img src="/astroassets/logo-hero.ChKYZu2S_Z1v4swz.svg" loading="eager" alt="P2HACKS2025 2025/12/13 - 2025/12/21" data-astro-cid-j7pv25f6 width="588" height="477" decoding="async"> </h1> <div class="HeroStatus" data-astro-cid-j7pv25f6> <div data-astro-cid-j7pv25f6>コードフリーズまで</div> <div style="height: 1em;"></div> <div class="Countdown" data-date="1766242799" data-countdown data-astro-cid-rice64zl> <div class="dateElement" data-astro-cid-rice64zl> <div class="dateElementNumber" data-countdown-day data-astro-cid-rice64zl></div> <div class="dateElementUnit" data-astro-cid-rice64zl>days</div> </div> <div class="dateElement" data-astro-cid-rice64zl> <div class="vertical" data-astro-cid-rice64zl></div> <div class="dateElementUnit" data-astro-cid-rice64zl>&nbsp;</div> </div> <div class="dateElement" data-astro-cid-rice64zl> <div class="dateElementNumber" data-countdown-hour data-astro-cid-rice64zl></div> <div class="dateElementUnit" data-astro-cid-rice64zl>hours</div> </div> <div class="dateElement" data-astro-cid-rice64zl> <div class="dateElementColon" data-astro-cid-rice64zl>:</div> <div class="dateElementUnit" data-astro-cid-rice64zl>&nbsp</div> </div> <div class="dateElement" data-astro-cid-rice64zl> <div class="dateElementNumber" data-countdown-minutes data-astro-cid-rice64zl></div> <div class="dateElementUnit" data-astro-cid-rice64zl>minutes</div> </div> <div class="dateElement" data-astro-cid-rice64zl> <div class="dateElementColon" data-astro-cid-rice64zl>:</div> <div class="dateElementUnit" data-astro-cid-rice64zl>&nbsp</div> </div> <div class="dateElement" data-astro-cid-rice64zl> <div class="dateElementNumber" data-countdown-seconds data-astro-cid-rice64zl></div> <div class="dateElementUnit" data-astro-cid-rice64zl>seconds</div> </div> </div>  <script>
   (() => {
